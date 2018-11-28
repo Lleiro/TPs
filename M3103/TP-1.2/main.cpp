@@ -1,10 +1,25 @@
-#include <iostream>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: lleiro
+ *
+ * Created on 28 novembre 2018, 19:38
+ */
+
+#include <cstdlib>
 
 using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+/*
+ * 
+ */
+int main(int argc, char** argv) {
 
-    cout << "Test";
     return 0;
 }
+
