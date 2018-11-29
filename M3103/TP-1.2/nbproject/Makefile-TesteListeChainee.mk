@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=GNU-Linux
+CND_DLIB_EXT=so
 CND_CONF=TesteListeChainee
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -38,8 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Cellule.o \
 	${OBJECTDIR}/ListeTrieeChainee.o \
 	${OBJECTDIR}/PrecondVioleeExcep.o \
-	${OBJECTDIR}/testeListeTrieeChainee.o \
-	${OBJECTDIR}/testeListeTrieeChaineeExtensions.o
+	${OBJECTDIR}/testeListeTrieeChainee.o
 
 
 # C Compiler Flags
@@ -69,27 +68,22 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tp-1.2: ${OBJECTFILES}
 ${OBJECTDIR}/Cellule.o: Cellule.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Cellule.o Cellule.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Cellule.o Cellule.cpp
 
 ${OBJECTDIR}/ListeTrieeChainee.o: ListeTrieeChainee.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListeTrieeChainee.o ListeTrieeChainee.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListeTrieeChainee.o ListeTrieeChainee.cpp
 
 ${OBJECTDIR}/PrecondVioleeExcep.o: PrecondVioleeExcep.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PrecondVioleeExcep.o PrecondVioleeExcep.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PrecondVioleeExcep.o PrecondVioleeExcep.cpp
 
 ${OBJECTDIR}/testeListeTrieeChainee.o: testeListeTrieeChainee.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/testeListeTrieeChainee.o testeListeTrieeChainee.cpp
-
-${OBJECTDIR}/testeListeTrieeChaineeExtensions.o: testeListeTrieeChaineeExtensions.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/testeListeTrieeChaineeExtensions.o testeListeTrieeChaineeExtensions.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/testeListeTrieeChainee.o testeListeTrieeChainee.cpp
 
 # Subprojects
 .build-subprojects:

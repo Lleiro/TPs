@@ -23,13 +23,13 @@ CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
 CND_PACKAGE_NAME_Release=tp-1.2.tar
 CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/tp-1.2.tar
 # TesteListeChainee configuration
-CND_PLATFORM_TesteListeChainee=GNU-MacOSX
-CND_ARTIFACT_DIR_TesteListeChainee=dist/TesteListeChainee/GNU-MacOSX
+CND_PLATFORM_TesteListeChainee=GNU-Linux
+CND_ARTIFACT_DIR_TesteListeChainee=dist/TesteListeChainee/GNU-Linux
 CND_ARTIFACT_NAME_TesteListeChainee=tp-1.2
-CND_ARTIFACT_PATH_TesteListeChainee=dist/TesteListeChainee/GNU-MacOSX/tp-1.2
-CND_PACKAGE_DIR_TesteListeChainee=dist/TesteListeChainee/GNU-MacOSX/package
+CND_ARTIFACT_PATH_TesteListeChainee=dist/TesteListeChainee/GNU-Linux/tp-1.2
+CND_PACKAGE_DIR_TesteListeChainee=dist/TesteListeChainee/GNU-Linux/package
 CND_PACKAGE_NAME_TesteListeChainee=tp-1.2.tar
-CND_PACKAGE_PATH_TesteListeChainee=dist/TesteListeChainee/GNU-MacOSX/package/tp-1.2.tar
+CND_PACKAGE_PATH_TesteListeChainee=dist/TesteListeChainee/GNU-Linux/package/tp-1.2.tar
 # Extensions configuration
 CND_PLATFORM_Extensions=GNU-MacOSX
 CND_ARTIFACT_DIR_Extensions=dist/Extensions/GNU-MacOSX

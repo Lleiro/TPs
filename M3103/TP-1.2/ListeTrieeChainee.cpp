@@ -239,32 +239,32 @@ int ListeTrieeChainee<TypeInfo>::getLongueur() const {
  */
 template<class TypeInfo>
 void ListeTrieeChainee<TypeInfo>::insereRecWorker(Cellule<TypeInfo>*& ptrCetteListe, const TypeInfo& nouvelleInfo) {
-    /* 1 3 4 6
+    /* 
      * ALGORITHME
-     * > nouvelleInfo <= ptrCetteListe.getInfo() => insereTete(); *
-     * > nouvelleInfo > ptrCetteListe.getInfo() => insereRecWorker(ptrCetteListe.getSuivante(), nouvelleInfo)
+     * > nouvelleInfo <= ptrCetteListe.getInfo() || ptrCetteListe->getSuivante()==nullptr => insere(nouvelleInfo); *
+     * > nouvelleInfo > ptrCetteListe.getInfo() => insereRecWorker(ptrCetteListe.getRefSuivante(), nouvelleInfo)
      */
 
     /*
      * A COMPLETER
      */
-    if (nouvelleInfo <= ptrCetteListe->getInfo()) insere(nouvelleInfo);
-    else {
+    if (nouvelleInfo <= ptrCetteListe->getInfo() || ptrCetteListe->getSuivante()==nullptr){
+        insere(nouvelleInfo);
+    } else {
         insereRecWorker(ptrCetteListe->getRefSuivante(), nouvelleInfo);
     }
-    
 }
 
 template<class TypeInfo>
 bool ListeTrieeChainee<TypeInfo>::supprimePremOccInfoRecWorker(Cellule<TypeInfo>*& ptrCetteListe, const TypeInfo & uneInfo) {
     /*
      * ALGORITHME
+     * > ptrCetteListe->getInfo() == uneInfo => suppr
      */
 
     /*
      * A COMPLETER
      */
-    
     // Ligne suivante à supprimer
     return true;
 }
@@ -305,23 +305,42 @@ template<class TypeInfo>
 void ListeTrieeChainee<TypeInfo>::afficheCroissantRecWorker(const Cellule<TypeInfo>* ptrCetteListe) const {
     /*
      * ALGORITHME
+     * > ptrCetteListe == nullptr => *
+     * > ptrCetteListe != nullptr => cout << ptrCetteListe.getInfo();
+     *                               afficheCriossantRecWorker(ptrCetteListe.getSuivante())
      */
 
     /*
      * A COMPLETER
      */
-
+    
+    if (ptrCetteListe){
+        cout << ptrCetteListe->getInfo() << " ";
+        afficheCroissantRecWorker(ptrCetteListe->getSuivante());
+    }
+    
+    
 } // end afficheCroissantRec
 
 template<class TypeInfo>
 void ListeTrieeChainee<TypeInfo>::afficheCroissantIterWorker(Cellule<TypeInfo>* ptrCetteListe) const {
-    /*
+     /*
      * ALGORITHME
+     * > ptrCetteListe == nullptr => *
+     * > ptrCetteListe != nullptr => cout << ptrCetteListe.getInfo();
+     *                               ptrCetteListe = ptrCetteListe->getSuivante();
      */
 
     /*
      * A COMPLETER
      */
+    
+    Cellule<TypeInfo>* ptrCetteListeTemp = ptrCetteListe;
+    
+    while(ptrCetteListeTemp){
+        cout << ptrCetteListeTemp->getInfo() << " ";
+        ptrCetteListeTemp = ptrCetteListeTemp->getSuivante();
+    }
 
 } // end afficheCroissantIter
 
