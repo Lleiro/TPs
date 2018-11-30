@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Répondre par oui ou non (o/n) : "
+read reponse
+echo "Réponse lue : $reponse"
+if [ "$reponse" = "o" ]
+then
+  echo "Execution du then"
+else
+  echo "Execution du else"
+fi

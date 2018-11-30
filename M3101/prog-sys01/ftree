@@ -1,0 +1,21 @@
+#!/bin/bash
+##############################################################################################
+affiche()
+##############################################################################################
+# procédure récursive qui :
+#    - affiche le nom du répertoire courant précédé de la chaîne d indentation reçue en paramètre
+#    - réalise une itération qui parcourt toutes les entrées du répertoire courant
+#       et pour chaque sous-répertoire que nous pouvons traverser:
+#	   -- se positionne sur ce sous répertoire
+#          -- réalise un appel récursif avec une chaîne d indentation augmentée de 2 espaces
+#      si l on ne peut traverser un sous-répertoire, on se contente d écrire son nom
+#      précédé de la chaîne d indentation augmentée de 2 espaces
+##############################################################################################
+{
+  # commande qui ne fait rien, à remplacer.
+  :
+}
+
+##############################################################################################
+# procédure principale
+##############################################################################################

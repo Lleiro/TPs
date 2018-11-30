@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ $# -eq 1 ]
+  then
+    if [ -e /users/info/pub/s3/M3101/$1 ]
+      then
+        if [ $1 = "prog-sys02" ]
+          then
+            cp -r -i /users/info/pub/s3/M3101/$1 ~/M3101/
+            ln -si /users/info/pub/s3/M3101/data/Makefile-ms $1/Makefile
+          else
+            cp -r -i /users/info/pub/s3/M3101/$1 ~/M3101/
+            ln -si /users/info/pub/s3/M3101/data/Makefile $1/Makefile
+        fi
+      else
+        echo "Le nom du fichier n'existe pas !"
+      fi
+  else
+    echo "ERROR : Il ne doit y avoir qu'un seul paramètre !"
+fi

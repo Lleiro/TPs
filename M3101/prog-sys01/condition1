@@ -1,0 +1,7 @@
+#!/bin/bash
+if cp prg.c titi
+then
+  echo "Execution du then"
+else
+  echo "Execution du else"
+fi

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ma_fonction()
+{
+  echo "Dans la fonction :"
+  echo "Premier  argument : $1"
+  echo "Deuxième argument : $2"
+  echo
+}
+
+ma_fonction toto 123
+ma_fonction 456 xyz

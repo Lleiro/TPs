@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in abc 123 toto titi
+do
+  echo "Dans la boucle : i=$i"
+done
+

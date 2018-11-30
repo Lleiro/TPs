@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Utilisation des \"\""
+echo "$USER"
+echo ""
+echo "Utilisation des '' "
+echo 'USER'
+echo ""
+echo "Utilisation des \`\`"
+echo `User`

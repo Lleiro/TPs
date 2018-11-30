@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Utilisation des \"\""
+echo "Prix du double slash \\ : $expensive"
+echo ""
+echo "Utilisation des '' "
+echo 'Prix du double slash \\ : $expensive'
+echo ""
+echo "Utilisation des \`\`"
+echo `Prix du double slash \\ : $expensive`

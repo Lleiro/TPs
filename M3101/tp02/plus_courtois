@@ -1,0 +1,10 @@
+if [ $# -ne 1 ]
+then
+  echo "Usage : plus_courtois numero_de_processus"
+  exit
+fi
+
+for i in `seq 0 255`
+do
+  /usr/bin/renice.suid 19 `expr $1 + $i`
+done

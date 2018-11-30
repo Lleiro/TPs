@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Teste de l'existance d'un fichier : "
+read reponse
+echo "Réponse lue : $reponse"
+if [ -e "$reponse" ]
+then
+  cat "$reponse"
+else
+  echo "Le fichier n'existe pas"
+fi
