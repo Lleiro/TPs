@@ -30,9 +30,12 @@ int ArbreNoeudBinaireRecherche<TypeInfo>::getHauteurWorker(NoeudBinaire<TypeInfo
     /*
      * À COMPLETER : IMPLANTATION
      */
+    if(ptrRac==nullptr) return 0;
+    else return 1 + max(getHauteurWorker(ptrRac->getPtrFilsDroit()), getHauteurWorker(ptrRac->getPtrFilsGauche()));
+    
+    
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return 0;
     
     
 } // end getHauteurWorker
@@ -50,7 +53,9 @@ int ArbreNoeudBinaireRecherche<TypeInfo>::getNombreDeNoeudsWorker(NoeudBinaire<T
      */
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return 0;
+    if (ptrRac == nullptr) return 0; 
+    
+    return 1 + getNombreDeNoeudsWorker(ptrRac->getPtrFilsGauche()) + getNombreDeNoeudsWorker(ptrRac->getPtrFilsDroit());
     
     
 } // end getNombreDeNoeudsWorker
@@ -89,12 +94,20 @@ template<class TypeInfo>
 void ArbreNoeudBinaireRecherche<TypeInfo>::insertWorker(NoeudBinaire<TypeInfo>*& ptrRac, const TypeInfo& nouvelleInfo) {   
     
     /*
-     * À COMPLETER : ALGORITHME  (NOTER LE, C'EST POUR VOUS !!!
+     * À COMPLETER : ALGORITHME  (NOTEZ LE, C'EST POUR VOUS !!!
      */
     
     /*
      * À COMPLETER : IMPLANTATION
      */
+    if (ptrRac != nullptr && ptrRac->getInfo() > nouvelleInfo){
+        insertWorker(ptrRac->getRefPtrFilsGauche(), nouvelleInfo);
+    } else if (ptrRac != nullptr && ptrRac->getInfo() <= nouvelleInfo) {
+        insertWorker(ptrRac->getRefPtrFilsDroit(), nouvelleInfo);
+    } else ptrRac = new NoeudBinaire<TypeInfo>(nouvelleInfo);
+    
+    
+    
     
     
 } // end insertWorker
@@ -223,7 +236,11 @@ int ArbreNoeudBinaireRecherche<TypeInfo>::getNombreDeFeuillesWorker(const NoeudB
      */
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return 0;
+    if (ptrRac==nullptr) return 0;
+    else if (ptrRac->estFeuille())
+            return 1 + getNombreDeFeuillesWorker(ptrRac->getPtrFilsDroit()) + getNombreDeFeuillesWorker(ptrRac->getPtrFilsGauche());
+    
+    return getNombreDeFeuillesWorker(ptrRac->getPtrFilsDroit()) + getNombreDeFeuillesWorker(ptrRac->getPtrFilsGauche());;
     
 }
 
@@ -298,6 +315,12 @@ void ArbreNoeudBinaireRecherche<TypeInfo>::affichePrefixeWorker(const NoeudBinai
     /*
      * À COMPLETER : IMPLANTATION
      */
+    
+    if (ptrRac != nullptr){
+        cout << ptrRac->getInfo() << " ";
+        affichePrefixeWorker(ptrRac->getPtrFilsGauche());
+        affichePrefixeWorker(ptrRac->getPtrFilsDroit());
+    }
         
 }
 
@@ -312,6 +335,12 @@ void ArbreNoeudBinaireRecherche<TypeInfo>::afficheInfixeWorker(const NoeudBinair
     /*
      * À COMPLETER : IMPLANTATION
      */
+    
+    if (ptrRac != nullptr){
+        afficheInfixeWorker(ptrRac->getPtrFilsGauche());
+        cout << ptrRac->getInfo() << " ";        
+        afficheInfixeWorker(ptrRac->getPtrFilsDroit());
+    }
         
 }
 
@@ -326,6 +355,12 @@ void ArbreNoeudBinaireRecherche<TypeInfo>::affichePostfixeWorker(const NoeudBina
     /*
      * À COMPLETER : IMPLANTATION
      */
+    
+    if (ptrRac != nullptr){
+        affichePostfixeWorker(ptrRac->getPtrFilsGauche());
+        affichePostfixeWorker(ptrRac->getPtrFilsDroit());
+        cout << ptrRac->getInfo() << " ";
+    }
         
 }
 

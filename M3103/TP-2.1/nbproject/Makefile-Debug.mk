@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/ArbreNoeudsBinairesRecherche.o \
 	${OBJECTDIR}/ExceptionPreconditionViolee.o \
 	${OBJECTDIR}/NoeudBinaire.o \
-	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/testeArbreNÅudBinaireRecherche.o
 
 
@@ -80,11 +79,6 @@ ${OBJECTDIR}/NoeudBinaire.o: NoeudBinaire.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NoeudBinaire.o NoeudBinaire.cpp
-
-${OBJECTDIR}/main.o: main.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/testeArbreNÅudBinaireRecherche.o: testeArbreNÅudBinaireRecherche.cpp
 	${MKDIR} -p ${OBJECTDIR}

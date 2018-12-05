@@ -752,13 +752,13 @@ void testeAMemeGeometrieQue() {
 
 int main() {
 
-    //testeInsertAffiche();
+    testeInsertAffiche();
 
-    //testeHauteur();
+    testeHauteur();
 
-    //testeGetNombreNoeuds();
+    testeGetNombreNoeuds();
 
-    //testeGetNombreFeuilles();
+    testeGetNombreFeuilles();
 
     //testeEstInfoPresente();
 

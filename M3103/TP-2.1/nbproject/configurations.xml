@@ -19,7 +19,6 @@
       <itemPath>ArbreNoeudsBinairesRecherche.cpp</itemPath>
       <itemPath>ExceptionPreconditionViolee.cpp</itemPath>
       <itemPath>NoeudBinaire.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
       <itemPath>testeArbreNÅudBinaireRecherche.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -57,8 +56,6 @@
       <item path="NoeudBinaire.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NoeudBinaire.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="testeArbreNÅudBinaireRecherche.cpp"
             ex="false"
@@ -99,8 +96,6 @@
       <item path="NoeudBinaire.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NoeudBinaire.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="testeArbreNÅudBinaireRecherche.cpp"
             ex="false"
