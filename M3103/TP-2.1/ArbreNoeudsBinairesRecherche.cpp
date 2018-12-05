@@ -208,7 +208,10 @@ bool ArbreNoeudBinaireRecherche<TypeInfo>::estInfoPresenteWorker(NoeudBinaire<Ty
      */
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return true;
+    if (ptrRac == nullptr) return false;
+    else if (ptrRac->getInfo() == infoCible) return true;    
+    else if(ptrRac->getInfo() > infoCible) return estInfoPresenteWorker(ptrRac->getPtrFilsGauche(), infoCible);
+    else return estInfoPresenteWorker(ptrRac->getPtrFilsDroit(), infoCible);
     
     
 } // end estInfoPresenteWorker

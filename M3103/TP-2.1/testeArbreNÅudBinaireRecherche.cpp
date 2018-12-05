@@ -760,7 +760,7 @@ int main() {
 
     testeGetNombreFeuilles();
 
-    //testeEstInfoPresente();
+    testeEstInfoPresente();
 
     //testeGetMax();
 
