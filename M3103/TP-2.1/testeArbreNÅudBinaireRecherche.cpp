@@ -762,11 +762,11 @@ int main() {
 
     testeEstInfoPresente();
 
-    //testeGetMax();
+    testeGetMax();
 
-    //testeGetNombreOccurrences();
+    testeGetNombreOccurrences();
 
-    //testeAMemeGeometrieQue();
+    testeAMemeGeometrieQue();
 
     /*
      * teste des opérations fournies

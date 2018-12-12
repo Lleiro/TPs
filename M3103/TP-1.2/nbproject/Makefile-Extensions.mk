@@ -37,7 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Cellule.o \
 	${OBJECTDIR}/ListeTrieeChainee.o \
-	${OBJECTDIR}/PrecondVioleeExcep.o
+	${OBJECTDIR}/PrecondVioleeExcep.o \
+	${OBJECTDIR}/testeListeTrieeChaineeExtensions.o
 
 
 # C Compiler Flags
@@ -78,6 +79,11 @@ ${OBJECTDIR}/PrecondVioleeExcep.o: PrecondVioleeExcep.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PrecondVioleeExcep.o PrecondVioleeExcep.cpp
+
+${OBJECTDIR}/testeListeTrieeChaineeExtensions.o: testeListeTrieeChaineeExtensions.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/testeListeTrieeChaineeExtensions.o testeListeTrieeChaineeExtensions.cpp
 
 # Subprojects
 .build-subprojects:
