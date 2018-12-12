@@ -18,7 +18,6 @@
       <itemPath>Mondial.cpp</itemPath>
       <itemPath>PrecondVioleeExcep.cpp</itemPath>
       <itemPath>TestMondial.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
       <itemPath>tinyxml2.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -52,8 +51,6 @@
       <item path="PrecondVioleeExcep.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TestMondial.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tinyxml2.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -89,8 +86,6 @@
       <item path="PrecondVioleeExcep.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TestMondial.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tinyxml2.cpp" ex="false" tool="1" flavor2="0">
       </item>

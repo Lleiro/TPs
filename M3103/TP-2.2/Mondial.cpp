@@ -79,9 +79,19 @@ void Mondial::printCountriesCode() const {
 int Mondial::getNbDeserts() const {
     // initialisation du nombre d’aéroports
     int nb = 0;
-
-    
-    
+    // accéder à <airportscategory>, c’est un fils de l'élément <racineMondial>
+    XMLElement* desertCategory = racineMondial->FirstChildElement("desertscategory");
+    // parcours complet des fils de <airportscategory> en les comptants
+    // 1) accéder au premier fils <airport> de <airportscategory>
+    XMLElement* currentDesert = desertCategory->FirstChildElement();
+    // 2) parcourir tous les <airport> qui sont des frères
+    while (currentDesert != nullptr) {
+        // un aéroport supplémentaire
+        nb = nb + 1;
+        // avancer au frère <airport> suivant de currentAirport
+        currentDesert = currentDesert->NextSiblingElement();
+    }
+    // currentAirport n’a plus de frère {currentAirport == nullptr}, c’est le dernier
     return nb;
 }
 
@@ -101,10 +111,13 @@ int Mondial::getNbElemCat(const string categoryName) {
     // accéder à <NameCategory>
     // attention il faut convertir le XMLElement de type string en un type char* (aux étudiants de trouver !)
     XMLElement* theCategory = racineMondial->FirstChildElement(XMLElementName.c_str());
+    XMLElement* currentCategory = theCategory->FirstChildElement();
     
     
-    
-    
+    while (currentCategory != nullptr) {
+        nb++;
+        currentCategory = currentCategory->NextSiblingElement();
+    }
     
     return nb;
 }
@@ -115,7 +128,8 @@ int Mondial::getNbElemCat(const string categoryName) {
 XMLElement* Mondial::getCountryXmlelementFromNameRec(string countryName) const {
     
     // A SUPPRIMER APRÈS COMPLÉTION
-    return nullptr;
+    XMLElement* theCategory = racineMondial->FirstChildElement(XMLElementName.c_str());
+    return getCountryXmlelementFromNameRecWorker(theCategory, countryName);
 }
 
 /*
@@ -125,7 +139,9 @@ XMLElement* Mondial::getCountryXmlelementFromNameRecWorker(XMLElement* currentCo
 
     
     // A SUPPRIMER APRÈS COMPLÉTION
-    return nullptr;
+    if (currentCountryElement == nullptr) {
+        return nullptr;
+    } else  return getCountryXmlelementFromNameRecWorker(currentCountryElement->NextSiblingElement(), countryName);
 }
 
 /*
