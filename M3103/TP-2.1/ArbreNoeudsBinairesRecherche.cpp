@@ -260,7 +260,10 @@ bool ArbreNoeudBinaireRecherche<TypeInfo>::aMemeGeometrieQueWorker(const NoeudBi
      */
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return true;
+    if ((monPtrRac == nullptr && sonPtrRac != nullptr) || (monPtrRac != nullptr && sonPtrRac == nullptr)) return false;
+    else if (monPtrRac == nullptr && sonPtrRac == nullptr) return true;
+    else return aMemeGeometrieQueWorker(monPtrRac->getPtrFilsGauche(),sonPtrRac->getPtrFilsGauche()) 
+            && aMemeGeometrieQueWorker(monPtrRac->getPtrFilsDroit(),sonPtrRac->getPtrFilsDroit());
   
 }
 
@@ -282,7 +285,8 @@ TypeInfo ArbreNoeudBinaireRecherche<TypeInfo>::getMaxWorker(const NoeudBinaire<T
      */
     
     // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return 0;
+    if (ptrRac->getPtrFilsDroit()!=nullptr) return getMaxWorker(ptrRac->getPtrFilsDroit());
+    return ptrRac->getInfo();
     
 }
 
@@ -298,9 +302,10 @@ int ArbreNoeudBinaireRecherche<TypeInfo>::getNombreOccurrencesWorker(const Noeud
      * À COMPLETER : IMPLANTATION
      */
     
-    // A ENLEVER LORSQUE L'IMPLANTATION EST FAITE !!
-    return 0;
-    
+    if (ptrRac == nullptr) return 0;
+    else if (ptrRac->getInfo() > uneInfo) return getNombreOccurrencesWorker(ptrRac->getPtrFilsGauche(), uneInfo);
+    else if (ptrRac->getInfo() == uneInfo) return 1 + getNombreOccurrencesWorker(ptrRac->getPtrFilsDroit(), uneInfo);
+    else return getNombreOccurrencesWorker(ptrRac->getPtrFilsDroit(), uneInfo);
 }
 
 //////////////////////////////////////////////////////////////
