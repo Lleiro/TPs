@@ -198,7 +198,6 @@ void testPrintCityInformation(Mondial& theMondial) {
 }
 
 int main() {
-
     Mondial theMondial("/users/info/pub/2a/M3103/TP22/mondial_HB.xml");
 
     //theMondial.Print();

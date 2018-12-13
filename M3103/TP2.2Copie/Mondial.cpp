@@ -128,8 +128,9 @@ int Mondial::getNbElemCat(const string categoryName) {
 XMLElement* Mondial::getCountryXmlelementFromNameRec(string countryName) const {
     
     // A SUPPRIMER APRÈS COMPLÉTION
-    XMLElement* theCategory = racineMondial->FirstChildElement(XMLElementName.c_str());
-    return getCountryXmlelementFromNameRecWorker(theCategory, countryName);
+//    XMLElement* theCategory = racineMondial->FirstChildElement(XMLElementName.c_str());
+//    return getCountryXmlelementFromNameRecWorker(theCategory, countryName);
+    return nullptr;
 }
 
 /*
