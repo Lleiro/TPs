@@ -5,3 +5,6 @@
 #
 # Debug configuration
 # Release configuration
+# premiercontact configuration
+# autour1 configuration
+# autroudutri configuration

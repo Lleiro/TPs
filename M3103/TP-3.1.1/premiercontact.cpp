@@ -131,6 +131,13 @@ int main() {
     /*
      * A COMPLETER
      */
+    forward_list<string> liste;
+    liste.push_front("zéro");
+    liste.push_front("un");
+    liste.push_front("deux");
+    liste.push_front("trois");
+    liste.push_front("quatre");
+    liste.push_front("cinq");
 
     // Teste de la procédure d'affichage
     cout << "- La liste devrait contenir cinq quatre trois deux un zéro" << endl;
@@ -138,6 +145,7 @@ int main() {
     /*
      * A COMPLETER
      */
+    affiche(liste);
 
 
     // vidage de la liste

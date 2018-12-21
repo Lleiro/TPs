@@ -19,6 +19,18 @@
                     <name>Release</name>
                     <type>1</type>
                 </confElem>
+                <confElem>
+                    <name>premiercontact</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>autour1</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>autroudutri</name>
+                    <type>1</type>
+                </confElem>
             </confList>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>

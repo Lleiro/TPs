@@ -36,9 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/PrecondVioleeExcep.o \
-	${OBJECTDIR}/autourdepair.o \
 	${OBJECTDIR}/autroudutri.o \
-	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/premiercontact.o
 
 
@@ -71,20 +69,10 @@ ${OBJECTDIR}/PrecondVioleeExcep.o: PrecondVioleeExcep.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PrecondVioleeExcep.o PrecondVioleeExcep.cpp
 
-${OBJECTDIR}/autourdepair.o: autourdepair.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/autourdepair.o autourdepair.cpp
-
 ${OBJECTDIR}/autroudutri.o: autroudutri.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/autroudutri.o autroudutri.cpp
-
-${OBJECTDIR}/main.o: main.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/premiercontact.o: premiercontact.cpp
 	${MKDIR} -p ${OBJECTDIR}
