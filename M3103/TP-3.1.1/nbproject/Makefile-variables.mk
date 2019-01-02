@@ -23,21 +23,21 @@ CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
 CND_PACKAGE_NAME_Release=tp-3.1.1.tar
 CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/tp-3.1.1.tar
 # premiercontact configuration
-CND_PLATFORM_premiercontact=GNU-Linux
-CND_ARTIFACT_DIR_premiercontact=dist/premiercontact/GNU-Linux
+CND_PLATFORM_premiercontact=GNU-MacOSX
+CND_ARTIFACT_DIR_premiercontact=dist/premiercontact/GNU-MacOSX
 CND_ARTIFACT_NAME_premiercontact=tp-3.1.1
-CND_ARTIFACT_PATH_premiercontact=dist/premiercontact/GNU-Linux/tp-3.1.1
-CND_PACKAGE_DIR_premiercontact=dist/premiercontact/GNU-Linux/package
+CND_ARTIFACT_PATH_premiercontact=dist/premiercontact/GNU-MacOSX/tp-3.1.1
+CND_PACKAGE_DIR_premiercontact=dist/premiercontact/GNU-MacOSX/package
 CND_PACKAGE_NAME_premiercontact=tp-3.1.1.tar
-CND_PACKAGE_PATH_premiercontact=dist/premiercontact/GNU-Linux/package/tp-3.1.1.tar
+CND_PACKAGE_PATH_premiercontact=dist/premiercontact/GNU-MacOSX/package/tp-3.1.1.tar
 # autour1 configuration
-CND_PLATFORM_autour1=GNU-Linux
-CND_ARTIFACT_DIR_autour1=dist/autour1/GNU-Linux
+CND_PLATFORM_autour1=GNU-MacOSX
+CND_ARTIFACT_DIR_autour1=dist/autour1/GNU-MacOSX
 CND_ARTIFACT_NAME_autour1=tp-3.1.1
-CND_ARTIFACT_PATH_autour1=dist/autour1/GNU-Linux/tp-3.1.1
-CND_PACKAGE_DIR_autour1=dist/autour1/GNU-Linux/package
+CND_ARTIFACT_PATH_autour1=dist/autour1/GNU-MacOSX/tp-3.1.1
+CND_PACKAGE_DIR_autour1=dist/autour1/GNU-MacOSX/package
 CND_PACKAGE_NAME_autour1=tp-3.1.1.tar
-CND_PACKAGE_PATH_autour1=dist/autour1/GNU-Linux/package/tp-3.1.1.tar
+CND_PACKAGE_PATH_autour1=dist/autour1/GNU-MacOSX/package/tp-3.1.1.tar
 # autroudutri configuration
 CND_PLATFORM_autroudutri=GNU-Linux
 CND_ARTIFACT_DIR_autroudutri=dist/autroudutri/GNU-Linux

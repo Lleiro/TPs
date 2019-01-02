@@ -22,6 +22,7 @@ distribution.
 */
 
 #include "tinyxml2.h"
+#include <iostream>
 
 #include <new>		// yes, this one new style header, is in the Android SDK.
 #   ifdef ANDROID_NDK

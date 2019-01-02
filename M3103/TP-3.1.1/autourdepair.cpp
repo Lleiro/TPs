@@ -37,7 +37,13 @@ forward_list<int>::iterator premierEntierPair(forward_list<int>& uneListe) {
      * A COMPLETER
      */
     // PUIS ENLEVER L'INSTRUCTION SUIVANTE
-    return uneListe.begin();
+    auto it = uneListe.begin();
+    
+    while (it != uneListe.end() && !estPair(*it)) {
+        ++it;
+    }
+    
+    return it;
 }
 
 /**
@@ -54,8 +60,20 @@ forward_list<int>::iterator iemeEntierPair(forward_list<int>& uneListe, int i) {
     /*
      * A COMPLETER
      */
+    int ieme = 0;
+    auto it = uneListe.begin();
+    
+    while (it != uneListe.end() && ieme != i) {
+        if (estPair(*it))
+            ieme++;
+        
+        if (ieme != i)
+            ++it;        
+    }
+    
+    
     // PUIS ENLEVER L'INSTRUCTION SUIVANTE
-    return uneListe.begin();
+    return it;
 }
 
 int main() {

@@ -199,20 +199,20 @@ void testPrintCityInformation(Mondial& theMondial) {
 
 int main() {
 
-    Mondial theMondial("/users/info/pub/2a/M3103/TP22/mondial_HB.xml");
+    Mondial theMondial("/Users/lleiro/Documents/IUT/GitPerso/TPs/M3103/mondial_HB.xml");
 
     //theMondial.Print();
 
-    testGetNbAirports(theMondial);
-    testPrintCodesPays(theMondial);
-    testGetNbDeserts(theMondial);
-    testgetNbElemCat(theMondial);
-    testGetCountryCodeFromName(theMondial);
-    testGetCountryPopulationFromName(theMondial);
-    testPrintCountryBorders(theMondial);
-    testPrintAllCountriesCrossedByRiver(theMondial);
-    testPrintCountriesWithProvincesCrossedByRiver(theMondial);
-    testPrintCountriesAndProvincesCrossedByRiver(theMondial);
+//    testGetNbAirports(theMondial);
+//    testPrintCodesPays(theMondial);
+//    testGetNbDeserts(theMondial);
+//    testgetNbElemCat(theMondial);
+//   testGetCountryCodeFromName(theMondial);
+//    testGetCountryPopulationFromName(theMondial);
+//    testPrintCountryBorders(theMondial);
+//    testPrintAllCountriesCrossedByRiver(theMondial);
+//    testPrintCountriesWithProvincesCrossedByRiver(theMondial);
+//    testPrintCountriesAndProvincesCrossedByRiver(theMondial);
     testPrintCityInformation(theMondial);
 
     return 0;

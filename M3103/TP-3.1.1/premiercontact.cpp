@@ -128,84 +128,87 @@ int main() {
     cout << "SUR DES LISTES DE CHAINES DE CARACTERES" << endl;
 
     // Déclaration et contruction d'une liste avant de string  par agrégat
-    /*
-     * A COMPLETER
-     */
-    forward_list<string> liste;
-    liste.push_front("zéro");
-    liste.push_front("un");
-    liste.push_front("deux");
-    liste.push_front("trois");
-    liste.push_front("quatre");
-    liste.push_front("cinq");
+    /* A COMPLETER */  
+        forward_list<string> liste = {"cinq", "quatre", "trois", "deux", "un", "zéro"};
+    /* =========== */
 
     // Teste de la procédure d'affichage
     cout << "- La liste devrait contenir cinq quatre trois deux un zéro" << endl;
     cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
-    affiche(liste);
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
+   
 
 
     // vidage de la liste
     cout << endl << "Nettoyage de la liste" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        liste.clear();
+    /* =========== */
+    
     cout << "- La liste devrait être vide !" << endl;
     cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
 
 
     // Séquence d'insertions en tête puis affichage
     cout << endl << "Insertions en tête de zéro, un, deux, trois, quatre, cinq" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */       
+        liste.push_front("zéro");
+        liste.push_front("un");
+        liste.push_front("deux");
+        liste.push_front("trois");
+        liste.push_front("quatre");
+        liste.push_front("cinq");
+    /* =========== */
 
     cout << "- La liste devrait contenir cinq quatre trois deux un zéro" << endl;
     cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
 
     
     //  //!!\\ pas pour étudiants
     // recopie d'une liste existantes dans une nouvelle liste
     cout << endl << "Copie de la liste précédente dans une nouvelle liste" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        forward_list<string> maListeCopiee;
+        copieListe(liste, maListeCopiee);
+    /* =========== */
+   
 
     cout << "- La liste originale contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
+    
 
     cout << "- La liste copiée contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(maListeCopiee);
+    /* =========== */
+    
 
 
     cout << endl << "Accès à la première valeur" << endl;
-    /*
-     * A COMPLETER
-     */
-
+    /* A COMPLETER */
+        cout << getInfoAtPosit(liste, 1) << endl;
+    /* =========== */
+    
     cout << endl << "Accès à la deuxième valeur" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        cout << getInfoAtPosit(liste, 2) << endl;
+    /* =========== */
 
     try {
         cout << endl << "Accès à une valeur non présente valeur" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        cout << getInfoAtPosit(liste, 8) << endl;
+    /* =========== */
     } catch (PrecondVioleeExcep e) {
         cout << "  !!! CA C'EST MAL PASSEE, VOICI POURQUOI ---> " << endl;
         cout << e.what() << endl;
@@ -213,42 +216,44 @@ int main() {
     }
 
     cout << endl << "Insertion à la première position de six" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        insereInfoAtPosit(liste, 1, "six");
+    /* =========== */
     cout << "- La liste devrait contenir six cinq quatre trois deux un zéro" << endl;
     cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
 
     
     cout << endl << "Insertion à la deuxième position entre six et cinq" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        insereInfoAtPosit(liste, 2, "six_cinq");
+    /* =========== */
+                
     cout << "- La liste devrait contenir six six_cinq cinq quatre trois deux un zéro" << endl;
         cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
 
 
     cout << endl << "Insertion à la dernière position après zéro" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        insereInfoAtPosit(liste, 9, "moins_un");
+    /* =========== */
+        
     cout << "- La liste devrait contenir six six_cinq cinq quatre trois deux un zéro" << endl;
         cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(liste);
+    /* =========== */
 
     try {
         cout << endl << "Insertion de trop_loin à la postion 11" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        insereInfoAtPosit(liste, 11, "moins_un");
+    /* =========== */
     } catch (PrecondVioleeExcep e) {
         cout << "  !!! CA C'EST MAL PASSEE, VOICI POURQUOI ---> " << endl;
         cout << e.what() << endl;
@@ -256,14 +261,15 @@ int main() {
     }
 
     cout << endl << "On va maintenant trier la seconde liste" << endl;
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+    // Wut ? 
+    /* =========== */
+        
     cout << "- La liste devrait contenir cinq deux quatre trois un zéro" << endl;
         cout << "- La liste contient -> ";
-    /*
-     * A COMPLETER
-     */
+    /* A COMPLETER */
+        affiche(maListeCopiee);
+    /* =========== */
 
 
     return 0;
