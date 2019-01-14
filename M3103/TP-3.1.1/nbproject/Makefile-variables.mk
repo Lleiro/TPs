@@ -39,13 +39,13 @@ CND_PACKAGE_DIR_autour1=dist/autour1/GNU-MacOSX/package
 CND_PACKAGE_NAME_autour1=tp-3.1.1.tar
 CND_PACKAGE_PATH_autour1=dist/autour1/GNU-MacOSX/package/tp-3.1.1.tar
 # autroudutri configuration
-CND_PLATFORM_autroudutri=GNU-Linux
-CND_ARTIFACT_DIR_autroudutri=dist/autroudutri/GNU-Linux
+CND_PLATFORM_autroudutri=GNU-MacOSX
+CND_ARTIFACT_DIR_autroudutri=dist/autroudutri/GNU-MacOSX
 CND_ARTIFACT_NAME_autroudutri=tp-3.1.1
-CND_ARTIFACT_PATH_autroudutri=dist/autroudutri/GNU-Linux/tp-3.1.1
-CND_PACKAGE_DIR_autroudutri=dist/autroudutri/GNU-Linux/package
+CND_ARTIFACT_PATH_autroudutri=dist/autroudutri/GNU-MacOSX/tp-3.1.1
+CND_PACKAGE_DIR_autroudutri=dist/autroudutri/GNU-MacOSX/package
 CND_PACKAGE_NAME_autroudutri=tp-3.1.1.tar
-CND_PACKAGE_PATH_autroudutri=dist/autroudutri/GNU-Linux/package/tp-3.1.1.tar
+CND_PACKAGE_PATH_autroudutri=dist/autroudutri/GNU-MacOSX/package/tp-3.1.1.tar
 #
 # include compiler specific variables
 #

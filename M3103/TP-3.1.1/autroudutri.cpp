@@ -29,8 +29,20 @@ bool estTriee(forward_list<T>& uneListe) {
     /*
      * A COMPLETER
      */
-    // PUIS ENLEVER L'INSTRUCTION SUIVANTE
-    return true;
+    
+    if (uneListe.begin() == uneListe.end() || ++uneListe.begin() == uneListe.end()) //si la liste est vide ou ne contient qu'un élément
+        return true;
+    
+    auto it = uneListe.begin();
+    int sauv = *it;
+    ++it;
+    
+    while (it != uneListe.end() && sauv <= *it) {
+        sauv = *it;
+        ++it;
+    }
+    
+    return (it == uneListe.end() ? true : false);
 }
 
 /**
@@ -45,7 +57,30 @@ forward_list<T> nouvelleListeTrieeSansDuplication(forward_list<T>& listeSource) 
      * A COMPLETER
      */
     // PUIS ENLEVER L'INSTRUCTION SUIVANTE
-    return listeSource;
+    forward_list<T> listeSansDuplicationReverse;
+    forward_list<T> listeSansDuplication;
+    auto it = listeSource.begin();
+    auto itSuiv = ++it;
+    
+    if(it != listeSource.end()) //on push le premier élément
+        listeSansDuplicationReverse.push_front(*it);
+    
+    while (itSuiv != listeSource.end()){        
+        if (*it != *itSuiv)
+            listeSansDuplicationReverse.push_front(*itSuiv);
+        
+        it = itSuiv;
+        ++itSuiv;
+    }
+    
+    it = listeSansDuplicationReverse.begin(); //on inverse la liste pour avoir le bon format
+    while (it != listeSansDuplicationReverse.end()){
+        listeSansDuplication.push_front(*it);
+        ++it;
+    }
+    
+
+    return listeSansDuplication;
 }
 
 int main(int argc, char** argv) {

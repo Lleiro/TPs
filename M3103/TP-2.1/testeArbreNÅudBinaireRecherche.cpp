@@ -750,6 +750,31 @@ void testeAMemeGeometrieQue() {
     cout << "FIN testeAMemeGeometrieQue()" << endl << endl;
 }
 
+
+void testeLargeurArbre(){
+    ArbreNoeudBinaireRecherche<int>* ptrArbre2 = new ArbreNoeudBinaireRecherche<int>();
+    cout << endl << "Arbre2 -> un arbre binaire de recherche équilibré" << endl;
+    ptrArbre2->insere(40);
+    ptrArbre2->insere(20);
+    ptrArbre2->insere(10);
+    ptrArbre2->insere(30);
+    ptrArbre2->insere(60);
+    ptrArbre2->insere(50);
+    ptrArbre2->insere(70);
+    ptrArbre2->insere(80);
+    
+    //        40
+    //     /      \
+    //    20      60
+    //   /  \    /  \
+    //  10  30  50  70
+    //               \
+    //               80
+    
+    ptrArbre2->afficheLargeur();
+    
+}
+
 int main() {
 
     testeInsertAffiche();
@@ -767,6 +792,8 @@ int main() {
     testeGetNombreOccurrences();
 
     testeAMemeGeometrieQue();
+    
+    testeLargeurArbre();
 
     /*
      * teste des opérations fournies

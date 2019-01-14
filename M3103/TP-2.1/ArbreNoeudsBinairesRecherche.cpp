@@ -11,6 +11,8 @@
 
 #include "ArbreNoeudsBinairesRecherche.h"
 
+#include <queue>
+
 using namespace std;
 
 //////////////////////////////////////////////////////////////
@@ -372,6 +374,42 @@ void ArbreNoeudBinaireRecherche<TypeInfo>::affichePostfixeWorker(const NoeudBina
         
 }
 
+template<class TypeInfo>
+void ArbreNoeudBinaireRecherche<TypeInfo>::afficheLargeur(){
+    cout << "En parcours préfixé, l'ABO contient : ";
+    afficheLargeurWorker(ptrRacine);
+    cout << endl;
+}
+
+template<class TypeInfo>
+void ArbreNoeudBinaireRecherche<TypeInfo>::afficheLargeurWorker(const NoeudBinaire<TypeInfo>* ptrRac) const {
+    queue<TypeInfo> maQueue;
+    const NoeudBinaire<TypeInfo>* ptrRacTemp = ptrRac;
+    
+    
+    while (ptrRac != nullptr) {
+        cout << "Valeur : " << ptrRac->getInfo()<< endl;
+        maQueue.push(ptrRac->getInfo());
+        
+        ptrRacTemp = ptrRac->getPtrFilsGauche();
+        maQueue.push(ptrRacTemp->getInfo());
+        
+        ptrRacTemp = ptrRac->getPtrFilsDroit();
+        maQueue.push(ptrRacTemp->getInfo());
+        
+        ptrRac = ptrRac->getPtrFilsGauche();
+    }
+    
+    
+    while (!maQueue.empty()) {
+        cout << maQueue.front() << " ";
+        maQueue.pop();
+    }
+    
+    
+    
+}
+
 
 
 //////////////////////////////////////////////////////////////
@@ -387,6 +425,7 @@ template<class TypeInfo>
 ArbreNoeudBinaireRecherche<TypeInfo>::ArbreNoeudBinaireRecherche() : ptrRacine(nullptr) {
     // cet ABR est vide -> constuction de ptrRacine
 } // end du constructeur par défaut
+
 
 template<class TypeInfo>
 ArbreNoeudBinaireRecherche<TypeInfo>::ArbreNoeudBinaireRecherche(const TypeInfo& infoRacine) {

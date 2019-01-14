@@ -67,6 +67,7 @@ private:
     void affichePrefixeWorker(const NoeudBinaire<TypeInfo>* ptrRac) const;
     void afficheInfixeWorker(const NoeudBinaire<TypeInfo>* ptrRac) const;
     void affichePostfixeWorker(const NoeudBinaire<TypeInfo>* ptrRac) const;
+    void afficheLargeurWorker(const NoeudBinaire<TypeInfo>* ptrRac) const;
     
     // workers des méthodes pédagogiques
     int getNombreDeFeuillesWorker(const NoeudBinaire<TypeInfo>* ptrRac) const;
@@ -136,6 +137,7 @@ public:
     void affichePrefixe() const;
     void affichePostfixe() const;
     void afficheInfixe() const;
+    void afficheLargeur();
 
 
     //------------------------------------------------------------
