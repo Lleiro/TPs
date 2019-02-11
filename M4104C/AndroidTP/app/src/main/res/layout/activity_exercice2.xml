@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercice2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quelle a été la différence de but lors du match de football opposant l'équipe enseignante du département à l'équipe étudiante ?"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroupe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioGroupeBonneReponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+10 pour les enseignants"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 nul"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 pour les étudiants"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALIDER MA RÉPONSE"/>
+
+
+        <TextView
+            android:id="@+id/avantReponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veuillez choisir une réponse"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/reponseVraie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bravo vous avez la bonne réponse !"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/reponseFausse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dommage c'est la mauvaise réponse !"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/reponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

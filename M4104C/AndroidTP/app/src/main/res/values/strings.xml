@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android-TP</string>
+
+    <string name="exercice1">Exercice 1</string>
+    <string name="exercice2">Exercice 2</string>
+    <string name="exercice3">Exercice 3</string>
+    <string name="exercice4">Exercice 4</string>
+    <string name="exercice5">Exercice 5</string>
+</resources>
