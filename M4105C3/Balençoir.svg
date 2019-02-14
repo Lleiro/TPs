@@ -1,0 +1,78 @@
+<svg version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox=" -100 -100 500 500">
+
+
+
+  <rect width="500" height="150" fill="blue" />
+
+  <rect x="0" y="150" width="500" height="300" fill="green" />
+
+  <path d="M315,300 l30,50 l-60,0 l30,-50 Z" fill="orange" />
+
+  <g id="balencoir" >
+      <rect x="-67" y ="0" width="125" height="5" fill="orange"/>
+      <!-- <g id="rightGuy">
+        <ellipse cx="360" cy="280" rx="10" ry="20" fill="red"/>
+        <circle cx="360" cy="257" r="10" fill="pink"/>
+      </g>
+
+      <g id="leftGuy">
+        <ellipse cx="265" cy="280" rx="10" ry="20" fill="blue"/>
+        <circle cx="265" cy="257" r="10" fill="pink"/>
+      </g> -->
+
+    <g id="rightGuy">
+      <ellipse cx="-50" cy="-20" rx="10" ry="20" fill="red"/>
+      <circle cx="-50" cy="-37" r="10" fill="pink"/>
+    </g>
+
+    <g id="leftGuy">
+      <ellipse cx="40" cy="-20" rx="10" ry="20" fill="blue"/>
+      <circle cx="40" cy="-37" r="10" fill="pink"/>
+    </g>
+
+    <animateTransform attributeName="transform" type="rotate"
+      values = "0; -10; 0; 10; 0"
+      repeatCount="indefinite" dur="4s"/>
+
+
+  </g>
+
+  <g transform="translate(300,300)">
+    <use href="balencoir"/>
+  </g>
+
+
+
+
+
+
+      <!-- <g id = "guy">
+  	  <ellipse id="body" cx="0" cy="-25" rx="15" ry="25" />
+  	  <circle id = "head" cx="0" r="10" cy="-55" style="fill:pink" />
+      </g>
+  	<g id="rotatingGuy">
+  		<use href="#guy"/>
+  		<animateTransform attributeName="transform" attributeType="XML" type="rotate"
+  			values = "0; -20; 0; 20; 0" repeatCount="indefinite" dur="4s"/>
+  	</g>
+
+  	<g id="plankWithRotatingGuys">
+  	  <rect x="-60" y="-10" width= "120" height="10" fill="brown"/>
+  	  <use href= "#rotatingGuy" x="-50" y="-10" fill="blue"/>
+        <use href= "#rotatingGuy" x="+50" y="-10" fill="red"/>
+  	</g>
+
+  	<g id="seesaw">
+  	  <g>
+  		<use href="#plankWithRotatingGuys"/>
+  		<animateTransform attributeName="transform" attributeType="XML" type="rotate"
+  			values = "0; 20; 0; -20; 0" repeatCount="indefinite" dur="4s"/>
+  	  </g>
+  	  <path d="M 0 0 L 25 25 L -25 25 L 0 0"/>
+  	</g> -->
+
+
+</svg>

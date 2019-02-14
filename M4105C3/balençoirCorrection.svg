@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="handson.css" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="500" viewBox="-50 -50 750 650" xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+<!-- See-saw for IUT-2 Grenoble D Lightfoot 2014-02 -->
+<defs>
+    <g id = "guy">
+	  <ellipse id="body" cx="0" cy="-25" rx="15" ry="25" />
+	  <circle id = "head" cx="0" r="10" cy="-55" style="fill:pink" />
+    </g>
+	<g id="rotatingGuy">
+		<use xlink:href="#guy"/>
+		<animateTransform attributeName="transform" attributeType="XML" type="rotate"
+			values = "0; -20; 0; 20; 0" repeatCount="indefinite" dur="4s"/>
+	</g>
+
+	<g id="plankWithRotatingGuys">
+	  <rect x="-60" y="-10" width= "120" height="10" fill="brown"/>
+	  <use xlink:href= "#rotatingGuy" x="-50" y="-10" fill="blue"/>
+      <use xlink:href= "#rotatingGuy" x="+50" y="-10" fill="red"/>
+	</g>
+
+	<g id="seesaw">
+	  <g>
+		<use xlink:href="#plankWithRotatingGuys"/>
+		<animateTransform attributeName="transform" attributeType="XML" type="rotate"
+			values = "0; 20; 0; -20; 0" repeatCount="indefinite" dur="4s"/>
+	  </g>
+	  <path d="M 0 0 L 25 25 L -25 25 L 0 0"/>
+	</g>
+</defs>
+
+<use xlink:href= "#seesaw" x="100" y="100" />
+<use xlink:href= "#seesaw" x="300" y="200" />
+
+</svg>
