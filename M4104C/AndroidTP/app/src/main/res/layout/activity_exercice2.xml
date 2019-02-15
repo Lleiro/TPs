@@ -42,34 +42,15 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VALIDER MA RÉPONSE"/>
+            android:text="VALIDER MA RÉPONSE"
+            android:onClick="exercice2Valider"/>
 
-
-        <TextView
-            android:id="@+id/avantReponse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Veuillez choisir une réponse"
-            android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/reponseVraie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bravo vous avez la bonne réponse !"
-            android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/reponseFausse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dommage c'est la mauvaise réponse !"
-            android:gravity="center"/>
 
         <TextView
             android:id="@+id/reponse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Veuillez choisir une réponse"
             android:gravity="center"/>
 
     </LinearLayout>

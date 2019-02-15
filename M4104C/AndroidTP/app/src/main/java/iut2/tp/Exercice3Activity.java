@@ -2,6 +2,7 @@ package iut2.tp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class Exercice3Activity extends AppCompatActivity {
 
@@ -11,5 +12,9 @@ public class Exercice3Activity extends AppCompatActivity {
 
         // On charge le XML pour créer l'arbre graphique
         setContentView(R.layout.activity_exercice3);
+    }
+
+    public void exercice3Jeu(View v) {
+
     }
 }

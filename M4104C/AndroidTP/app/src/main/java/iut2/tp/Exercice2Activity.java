@@ -18,13 +18,12 @@ public class Exercice2Activity extends AppCompatActivity {
 
     public void exercice2Valider (View v) {
         RadioGroup group = (RadioGroup) findViewById(R.id.radiogroupe);
-        TextView reponseVraie = (TextView) findViewById(R.id.reponseVraie);
-        TextView reponseFausse = (TextView) findViewById(R.id.reponseFausse);
-        TextView reponseAvant = (TextView) findViewById(R.id.avantReponse);
         TextView reponse = (TextView) findViewById(R.id.reponse);
 
         if (group.getCheckedRadioButtonId()  ==  R.id.radioGroupeBonneReponse) {
-
+            reponse.setText("Excellent bonne réponse !");
+        } else if (group.getCheckedRadioButtonId() != R.id.radioGroupeBonneReponse) {
+            reponse.setText("Mauvaise réponse !");
         }
     }
 }
