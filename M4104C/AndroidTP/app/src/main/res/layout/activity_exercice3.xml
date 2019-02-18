@@ -20,14 +20,17 @@
 
         <ImageView
             android:id="@+id/mainOrdi"
-            android:layout_width="100px"
-            android:layout_height="100px"
+            android:layout_width="150px"
+            android:layout_height="150px"
             android:layout_gravity="right"
             android:layout_marginRight="10px"
             android:src="@drawable/caillou"
+            android:background="#FF0000"
+            android:padding="3dp"
             />
 
         <TextView
+            android:id="@+id/resultat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ÉGALITÉ !"
@@ -43,35 +46,54 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
             <ImageView
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:src="@drawable/caillou"/>
+                android:id="@+id/pierre"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="#000000"
+                android:onClick="exercice3Jeu"
+                android:padding="3dp"
+                android:src="@drawable/caillou">
+            </ImageView>
+
             <ImageView
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:src="@drawable/ciseaux"/>
+                android:id="@+id/ciseaux"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="#000000"
+                android:onClick="exercice3Jeu"
+                android:padding="3dp"
+                android:src="@drawable/ciseaux" />
+
             <ImageView
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:src="@drawable/papier"/>
+                android:id="@+id/feuille"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="#000000"
+                android:onClick="exercice3Jeu"
+                android:padding="3dp"
+                android:src="@drawable/papier" />
+
         </LinearLayout>
 
         <TextView
+            android:id="@+id/victoire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="nombre de victoire : 0"
             android:layout_gravity="center"/>
 
         <TextView
+            android:id="@+id/defaite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="nombre de défaite : 0"
             android:layout_gravity="center"/>
 
         <TextView
+            android:id="@+id/egalite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
