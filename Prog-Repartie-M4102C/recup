@@ -5,10 +5,11 @@ if [ $# -eq 1 ]
       then
         if [ $1 = "prog-sys02" ]
           then
-            cp -r -i /users/info/pub/s3/M3101/$1 ~/GitTps/TPs/M4102C
+            cp -r -i /users/info/pub/s3/M3101/$1 ~/GitTps/TPs/Prog-Repartie-M4102C
             #ln -si /users/info/pub/s3/M3101/data/Makefile-ms $1/Makefile
           else
-            cp -r -i /users/info/pub/s4/M4102C/$1 ~/GitTps/TPs/M4102C
+            cp -r -i /users/info/pub/s4/M4102C/$1 ~/GitTps/TPs/Prog-Repartie-M4102C
+            echo "La copie à bien été faite !"
             #ln -si /users/info/pub/s3/M3101/data/Makefile $1/Makefile
         fi
       else

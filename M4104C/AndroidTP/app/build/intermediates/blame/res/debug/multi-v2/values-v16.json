@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/tmp/monteile-.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6e5154f67bbd877d1834c0d24e5a2d5e/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

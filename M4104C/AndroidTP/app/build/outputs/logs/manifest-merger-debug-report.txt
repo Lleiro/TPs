@@ -1,0 +1,174 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6e5154f67bbd877d1834c0d24e5a2d5e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/eb56591ce948b7f0e0bb5d022c8ab787/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e9840a1648caaabf7bbc800d8fdc78f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/ed536db15d6c8263f27f02d9869eb2f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/561ca9b85cd4a0d9432f833fc75ad77a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bf64917f65456098d7423fb5edc64379/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/29e640a462af5342ac9198b387d8c5f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f70a80fb03b092cfc1d187335775b89d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0ff1343993f284e22f43c480e2d5e036/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0bab2d4486c2aa7ed1a59c41931f5b00/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d851eee37edae4a274a40ac53cd3e129/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7c840559d91bbd418d7b511f99870755/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/037e19f0b71cb86f500b31201aefaa73/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cc0ea6723748f6c466ddbc0cf101f9d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8556658902301604ca3503555079ba3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ca290a2bf798b2af6acd5a956fdc7377/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8a6d28c607bba23fb1f9b4e4a8402b27/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b6eb123b75cb284dd1f898d167375771/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/50c17d2e53a688bc046bc47dfad89f16/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f99aa75e0012446dc051fd72e6cdd748/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9d451faf3662d58ec0e6227f997f35f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6d4d8df57d3e64ef12da2d5d44d797b3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8881a9840b3fa731e1c158b0b7847764/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1069fba3d753f8dc8427547be705a5b0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/62016e4e0f93a86a778069a1bf93d791/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6330a96550df438ba276ac7352465938/AndroidManifest.xml:17:1-22:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:3:5-22
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/eb56591ce948b7f0e0bb5d022c8ab787/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/eb56591ce948b7f0e0bb5d022c8ab787/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ca290a2bf798b2af6acd5a956fdc7377/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ca290a2bf798b2af6acd5a956fdc7377/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:11:9-40
+activity#iut2.tp.Exercice5Activity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:12:9-64
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:12:19-52
+activity#iut2.tp.Exercice4Activity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:13:9-55
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:13:19-52
+activity#iut2.tp.Exercice3Activity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:14:9-55
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:14:19-52
+activity#iut2.tp.Exercice2Activity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:15:9-55
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:15:19-52
+activity#iut2.tp.Exercice1Activity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:16:9-55
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:16:19-52
+activity#iut2.tp.MainActivity
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml:21:27-74
+uses-sdk
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6e5154f67bbd877d1834c0d24e5a2d5e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6e5154f67bbd877d1834c0d24e5a2d5e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/eb56591ce948b7f0e0bb5d022c8ab787/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/eb56591ce948b7f0e0bb5d022c8ab787/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e9840a1648caaabf7bbc800d8fdc78f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e9840a1648caaabf7bbc800d8fdc78f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/ed536db15d6c8263f27f02d9869eb2f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/ed536db15d6c8263f27f02d9869eb2f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/561ca9b85cd4a0d9432f833fc75ad77a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/561ca9b85cd4a0d9432f833fc75ad77a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bf64917f65456098d7423fb5edc64379/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bf64917f65456098d7423fb5edc64379/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/29e640a462af5342ac9198b387d8c5f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/29e640a462af5342ac9198b387d8c5f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f70a80fb03b092cfc1d187335775b89d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f70a80fb03b092cfc1d187335775b89d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0ff1343993f284e22f43c480e2d5e036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0ff1343993f284e22f43c480e2d5e036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0bab2d4486c2aa7ed1a59c41931f5b00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0bab2d4486c2aa7ed1a59c41931f5b00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d851eee37edae4a274a40ac53cd3e129/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d851eee37edae4a274a40ac53cd3e129/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7c840559d91bbd418d7b511f99870755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7c840559d91bbd418d7b511f99870755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/037e19f0b71cb86f500b31201aefaa73/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/037e19f0b71cb86f500b31201aefaa73/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cc0ea6723748f6c466ddbc0cf101f9d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cc0ea6723748f6c466ddbc0cf101f9d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8556658902301604ca3503555079ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8556658902301604ca3503555079ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/332c814573ddc96f7f554eff97406e4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ca290a2bf798b2af6acd5a956fdc7377/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ca290a2bf798b2af6acd5a956fdc7377/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8a6d28c607bba23fb1f9b4e4a8402b27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8a6d28c607bba23fb1f9b4e4a8402b27/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b6eb123b75cb284dd1f898d167375771/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b6eb123b75cb284dd1f898d167375771/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/50c17d2e53a688bc046bc47dfad89f16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/50c17d2e53a688bc046bc47dfad89f16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f99aa75e0012446dc051fd72e6cdd748/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f99aa75e0012446dc051fd72e6cdd748/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9d451faf3662d58ec0e6227f997f35f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9d451faf3662d58ec0e6227f997f35f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6d4d8df57d3e64ef12da2d5d44d797b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6d4d8df57d3e64ef12da2d5d44d797b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8881a9840b3fa731e1c158b0b7847764/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8881a9840b3fa731e1c158b0b7847764/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1069fba3d753f8dc8427547be705a5b0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1069fba3d753f8dc8427547be705a5b0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/62016e4e0f93a86a778069a1bf93d791/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/62016e4e0f93a86a778069a1bf93d791/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6330a96550df438ba276ac7352465938/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /tmp/monteile-.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6330a96550df438ba276ac7352465938/AndroidManifest.xml:20:5-44
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		ADDED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
+		INJECTED from /users/info/etu-s4/monteile/GitTps/TPs/M4104C/AndroidTP/app/src/main/AndroidManifest.xml
