@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Exercice4Activity">
+    tools:context=".ErrorActivity">
 
     <LinearLayout
         android:layout_width="395dp"
@@ -14,25 +14,9 @@
         tools:layout_editor_absoluteY="8dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="75px"
-            android:text="Écris ton prénom"
-            android:gravity="center"/>
-        <EditText
-            android:id="@+id/prenom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-        <Button
-            android:id="@+id/valider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="VALIDER"
-            android:onClick="exercice4Valider"/>
+            android:text="TextView" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

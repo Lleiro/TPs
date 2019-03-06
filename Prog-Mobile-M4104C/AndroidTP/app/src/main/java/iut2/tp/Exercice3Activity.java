@@ -12,11 +12,10 @@ import iut2.tp.exercice4Data.Jeu;
 import iut2.tp.exercice4Data.Resultat;
 
 public class Exercice3Activity extends AppCompatActivity {
+
+    //Déclaration des résultats
     private Resultat resultat = new Resultat();
 
-    private int nbVic =0;
-    private int nbDef = 0;
-    private int nbEga =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,20 +81,18 @@ public class Exercice3Activity extends AppCompatActivity {
             System.out.println("MAIN JOUEUR : " + jeu.getMainJoueur());
 
             if (jeu.joueurGagne()) {
-                nbVic++;
+                resultat.addVictoire();
                 res.setText("VICTOIRE !");
-                victoire.setText("nombre de victoires : " + nbVic);
+                victoire.setText("nombre de victoires : " + resultat.getNombreVictoire());
 
             } else if (jeu.egalite()) {
                 resultat.addEgalite();
-                nbEga++;
                 res.setText("ÉGALITÉ !");
-                egalite.setText("nombre de nuls : " + nbEga);
+                egalite.setText("nombre de nuls : " + resultat.getNombreEgalite());
             } else {
                 resultat.addDefaite();
                 res.setText("DÉFAITE !");
-                nbDef++;
-                defaite.setText("nombre de défaites : " + nbDef);
+                defaite.setText("nombre de défaites : " + resultat.getNombreDefaite());
             }
         } while(v.getId() != choix);
 
