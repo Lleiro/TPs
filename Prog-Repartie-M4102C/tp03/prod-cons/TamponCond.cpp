@@ -11,6 +11,10 @@ TamponCond::TamponCond(const unsigned long taille_, EcranManchots& ecran_) :
 
 void TamponCond::deposer_element(Element e)
 {
+  unique_lock<mutex> verrou(mut);
+  while (deque.size() == taille)
+    var_cond.wait(verrou);
+
   ecran.dessiner_creer_manchot(e);
 
     //-- NE PAS TOUCHER : code qui teste la bonne réalisation de la sychronisation --/
@@ -25,6 +29,7 @@ void TamponCond::deposer_element(Element e)
     ecran.dessiner_deposer_manchot(e);
 
     tampon.push_front(e);
+    cond2.notity_one();
 
 }
 

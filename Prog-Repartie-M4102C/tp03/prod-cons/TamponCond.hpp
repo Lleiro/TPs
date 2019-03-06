@@ -19,6 +19,10 @@ private :
   const unsigned long taille;
   std::deque<Element> tampon;
 
+  std::mutex mut;
+  std::condition_variable cond1;
+  std::condition_variable cond2;
+
 };
 
 #endif // TAMPON_COND_HPP_
