@@ -18,6 +18,7 @@ private:
   unsigned long nb_libre;
   //--TODO-- à compléter --TODO--/
   std::mutex mut;
+  std::condition_variable attente;
 
 
   //-----------------------------/
