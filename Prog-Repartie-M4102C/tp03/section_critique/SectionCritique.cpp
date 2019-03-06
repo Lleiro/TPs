@@ -7,7 +7,7 @@
  * Macro pour éviter les warnings "unused ..." dans une version intermédiaire.
  * A enlever lorsqu'elle n'est plus utilisée.
  * -----------------------------------------------------------------------------*/
-#define UNUSED(x) (void)(x)
+//#define UNUSED(x) (void)(x)
 
 using namespace std;
 
@@ -21,10 +21,18 @@ SectionCritique::~SectionCritique()
 //--TODO-- à compléter --TODO--/
 void SectionCritique::entrer(void)
 {
-  UNUSED(nb_libre);
+  unique_lock<mutex>verr(mut);
+  while(nb_libre == 0) {
+    attente.wait(verr);
+  }
+  nb_libre--;
 }
 
 void SectionCritique::sortir(void)
-{}
+{
+  lock-guard<mutex>verr(mut);
+  nblibre++;
+  attente.notify_one();
+}
 
 //-----------------------------/
