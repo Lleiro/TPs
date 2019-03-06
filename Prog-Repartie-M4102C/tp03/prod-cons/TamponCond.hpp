@@ -2,6 +2,8 @@
 #define TAMPON_COND_HPP_
 
 #include <deque>
+#include <mutex>
+#include <condition_variable>
 
 #include "Tampon.hpp"
 #include "Element.hpp"
