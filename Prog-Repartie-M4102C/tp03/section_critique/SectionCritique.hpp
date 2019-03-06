@@ -17,6 +17,7 @@ public:
 private:
   unsigned long nb_libre;
   //--TODO-- à compléter --TODO--/
+  std::mutex mut;
 
 
   //-----------------------------/
