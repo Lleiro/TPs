@@ -12,8 +12,8 @@ TamponCond::TamponCond(const unsigned long taille_, EcranManchots& ecran_) :
 void TamponCond::deposer_element(Element e)
 {
   unique_lock<mutex> verrou(mut);
-  while (deque.size() == taille)
-    var_cond.wait(verrou);
+  while (tampon.size() == taille)
+    cond1.wait(verrou);
 
   ecran.dessiner_creer_manchot(e);
 
