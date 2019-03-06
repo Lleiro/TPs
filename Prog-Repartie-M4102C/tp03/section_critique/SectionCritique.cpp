@@ -30,7 +30,7 @@ void SectionCritique::entrer(void)
 
 void SectionCritique::sortir(void)
 {
-  lock-guard<mutex>verr(mut);
+  lock_guard<mutex>verr(mut);
   nb_libre++;
   attente.notify_one();
 }
