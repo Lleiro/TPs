@@ -37,7 +37,7 @@ Element TamponCond::retirer_element(const unsigned long numcons, const unsigned 
 {
 
   unique_lock<mutex> verrou(mut);
-  while (tampon.size() == taille)
+  while (tampon.size() == 0)
     cond2.wait(verrou);
 
 
