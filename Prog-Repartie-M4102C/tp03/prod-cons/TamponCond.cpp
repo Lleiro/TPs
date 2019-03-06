@@ -35,6 +35,12 @@ void TamponCond::deposer_element(Element e)
 
 Element TamponCond::retirer_element(const unsigned long numcons, const unsigned long nummanchot)
 {
+
+  unique_lock<mutex> verrou(mut);
+  while (tampon.size() == taille)
+    cond2.wait(verrou);
+
+
   ecran.dessiner_demander_manchot(static_cast<int>(numcons),static_cast<int>(nummanchot));
   Element e = 0;
 
@@ -52,6 +58,8 @@ Element TamponCond::retirer_element(const unsigned long numcons, const unsigned 
     e.setNumCons(numcons);
 
     ecran.dessiner_retirer_manchot(e,static_cast<int>(nummanchot));
+
+    cond1.notify_one();
 
 
   return e;
