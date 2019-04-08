@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuExerciceActivity">
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/meilleurScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="meilleur score : "
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choix de la difficulté"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="50dp">
+
+
+
+           <TextView
+                android:id="@+id/difficulte1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="100sp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/border_transparent"
+                android:onClick="gestionDifficulteExercice"/>
+
+            <TextView
+                android:id="@+id/difficulte2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="100sp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/border_red"
+                android:onClick="gestionDifficulteExercice"/>
+
+            <TextView
+                android:id="@+id/difficulte3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="100sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/border_transparent"
+                android:onClick="gestionDifficulteExercice"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choix de l'exercice"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/exercice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ADDITION"
+            android:textSize="30sp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/border_transparent"
+            android:onClick="gestionDifficulteExercice"/>
+
+        <TextView
+            android:id="@+id/exercice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SOUSTRACTION"
+            android:textSize="30sp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/border_red"
+            android:onClick="gestionDifficulteExercice"/>
+
+        <TextView
+            android:id="@+id/exercice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MULTIPLICATION"
+            android:textSize="30sp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/border_transparent"
+            android:onClick="gestionDifficulteExercice"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/retourMenuMatiere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Retour"
+                    android:onClick="retourMenuMatiere"/>
+                <Button
+                    android:id="@+id/goToExercice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="goToExercice"
+                    android:text="Valider"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -29,6 +29,7 @@ void TamponCond::deposer_element(Element e)
     ecran.dessiner_deposer_manchot(e);
 
     tampon.push_front(e);
+    
     cond2.notify_one();
 
 }
