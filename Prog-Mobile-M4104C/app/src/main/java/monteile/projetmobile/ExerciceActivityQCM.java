@@ -41,6 +41,8 @@ public class ExerciceActivityQCM extends AppCompatActivity {
     private Button rep4;
     private TextView tvScore;
 
+    private Button btnSuiv;
+
 
 
     @Override
@@ -55,6 +57,9 @@ public class ExerciceActivityQCM extends AppCompatActivity {
             difficulteInt = 2;
         else
             difficulteInt = 3;
+
+        btnSuiv = (Button) findViewById(R.id.btnSuivant);
+        btnSuiv.setVisibility(View.INVISIBLE);
 
 
 
@@ -90,8 +95,9 @@ public class ExerciceActivityQCM extends AppCompatActivity {
             public void onClick(View view) {
                 if (geographie.getCurrentReponse().equals(rep1.getText()))
                     score++;
-                if (scoreMax != TOTAL_QUESTION)
-                    goToNextExerciceGeo();
+                else
+                    rep1.setBackgroundColor(Color.RED);
+                pauseAvantSuite(view);
             }
         });
 
@@ -100,8 +106,9 @@ public class ExerciceActivityQCM extends AppCompatActivity {
             public void onClick(View view) {
                 if (geographie.getCurrentReponse().equals(rep2.getText()))
                     score++;
-                if (scoreMax != TOTAL_QUESTION)
-                    goToNextExerciceGeo();
+                else
+                    rep2.setBackgroundColor(Color.RED);
+                pauseAvantSuite(view);
             }
         });
 
@@ -110,8 +117,9 @@ public class ExerciceActivityQCM extends AppCompatActivity {
             public void onClick(View view) {
                 if (geographie.getCurrentReponse().equals(rep3.getText()))
                     score++;
-                if (scoreMax != TOTAL_QUESTION)
-                    goToNextExerciceGeo();
+                else
+                    rep3.setBackgroundColor(Color.RED);
+                pauseAvantSuite(view);
             }
         });
 
@@ -120,10 +128,51 @@ public class ExerciceActivityQCM extends AppCompatActivity {
             public void onClick(View view) {
                 if (geographie.getCurrentReponse().equals(rep4.getText()))
                     score++;
+                else
+                    rep4.setBackgroundColor(Color.RED);
+                pauseAvantSuite(view);
+            }
+        });
+    }
+
+    public void pauseAvantSuite(View view) {
+        rep1.setEnabled(false);
+        rep2.setEnabled(false);
+        rep3.setEnabled(false);
+        rep4.setEnabled(false);
+
+        if (geographie.getCurrentReponse().equals(rep1.getText())) {
+            rep1.setBackgroundColor(Color.GREEN);
+        } else if (geographie.getCurrentReponse().equals(rep2.getText())) {
+            rep2.setBackgroundColor(Color.GREEN);
+        } else if (geographie.getCurrentReponse().equals(rep3.getText())) {
+            rep3.setBackgroundColor(Color.GREEN);
+        } else if (geographie.getCurrentReponse().equals(rep4.getText())) {
+            rep4.setBackgroundColor(Color.GREEN);
+        }
+
+        btnSuiv.setVisibility(View.VISIBLE);
+
+        btnSuiv.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                rep1.setBackgroundColor(Color.LTGRAY);
+                rep2.setBackgroundColor(Color.LTGRAY);
+                rep3.setBackgroundColor(Color.LTGRAY);
+                rep4.setBackgroundColor(Color.LTGRAY);
+
+                rep1.setEnabled(true);
+                rep2.setEnabled(true);
+                rep3.setEnabled(true);
+                rep4.setEnabled(true);
+
+                btnSuiv.setVisibility(View.INVISIBLE);
+                //permet de ne pas pouvoir répondre après le nombre de question total
                 if (scoreMax != TOTAL_QUESTION)
                     goToNextExerciceGeo();
             }
         });
+
     }
 
     public void retourMenuMatiere(View view) {
@@ -154,7 +203,7 @@ public class ExerciceActivityQCM extends AppCompatActivity {
         }
 
         try {
-            Thread.sleep(150);
+            Thread.sleep(50);
         } catch (InterruptedException ex) {}
 
         TextView question = (TextView) findViewById(R.id.tvQuestionQCM);

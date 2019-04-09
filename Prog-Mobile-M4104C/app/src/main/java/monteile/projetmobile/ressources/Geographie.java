@@ -48,6 +48,19 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Singapour Singapour");
             questionEtReponse.add("Tunisie Tunis");
             questionEtReponse.add("Turquie Ankara");
+            questionEtReponse.add("Corée-du-Sud Séoul");
+            questionEtReponse.add("Djibouti Djibouti");
+            questionEtReponse.add("Croatie Zagreb");
+            questionEtReponse.add("Indonésie Jakarta");
+            questionEtReponse.add("Maroc Rabat");
+            questionEtReponse.add("Mexique Mexico");
+            questionEtReponse.add("Monaco Monaco");
+            questionEtReponse.add("République-Tchèque Prague");
+            questionEtReponse.add("Roumanie Bucarest");
+            questionEtReponse.add("Royaume-Uni Londres");
+            questionEtReponse.add("Sénégal Dakar");
+            questionEtReponse.add("Vatican Vatican");
+            questionEtReponse.add("Côte-d'Ivoire Yamoussoukro");
         } else {
             questionEtReponse.add("Afghanistan Kaboul");
             questionEtReponse.add("Albanie Tirana");
@@ -78,10 +91,6 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Comores Moroni");
             questionEtReponse.add("Congo Brazzaville");
             questionEtReponse.add("Corée-du-Nord Pyongyang");
-            questionEtReponse.add("Corée-du-Sud Séoul");
-            questionEtReponse.add("Côte-d'Ivoire Yamoussoukro");
-            questionEtReponse.add("Croatie Zagreb");
-            questionEtReponse.add("Djibouti Djibouti");
             questionEtReponse.add("Dominique Roseau");
             questionEtReponse.add("Equateur Quito");
             questionEtReponse.add("Erythrée Asmara");
@@ -99,7 +108,6 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Guyana Georgetown");
             questionEtReponse.add("Haïti Port-au-Prince");
             questionEtReponse.add("Honduras Tegucigalpa");
-            questionEtReponse.add("Indonésie Jakarta");
             questionEtReponse.add("Irak Bagdad");
             questionEtReponse.add("Iran Téhéran");
             questionEtReponse.add("Islande Reykjavik");
@@ -124,13 +132,10 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Malawi Lilongwe");
             questionEtReponse.add("Maldives Malé");
             questionEtReponse.add("Mali Bamako");
-            questionEtReponse.add("Maroc Rabat");
             questionEtReponse.add("Marshall Majuro");
             questionEtReponse.add("Mauritanie Nouakchott");
-            questionEtReponse.add("Mexique Mexico");
             questionEtReponse.add("Micronésie Palikir");
             questionEtReponse.add("Moldavie Chisinau");
-            questionEtReponse.add("Monaco Monaco");
             questionEtReponse.add("Mongolie Oulan-Bator");
             questionEtReponse.add("Monténégro Podgorica");
             questionEtReponse.add("Mozambique Maputo");
@@ -156,9 +161,6 @@ public class Geographie implements Serializable {
             questionEtReponse.add("République-Centrafricaine Bangui");
             questionEtReponse.add("République-Démocratique-du-Congo Kinshasa");
             questionEtReponse.add("République-Dominicaine Saint-Domingue");
-            questionEtReponse.add("République-Tchèque Prague");
-            questionEtReponse.add("Roumanie Bucarest");
-            questionEtReponse.add("Royaume-Uni Londres");
             questionEtReponse.add("Rwanda Kigali");
             questionEtReponse.add("Saint-Kitts-et-Nevis Basseterre");
             questionEtReponse.add("Saint-Marin Saint-Marin");
@@ -166,7 +168,6 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Sainte-Lucie Castries");
             questionEtReponse.add("Salomon Honiara");
             questionEtReponse.add("Samoa Apia");
-            questionEtReponse.add("Sénégal Dakar");
             questionEtReponse.add("Serbie Belgrade");
             questionEtReponse.add("Seychelles Victoria");
             questionEtReponse.add("Sierra-Leone Freetown");
@@ -189,7 +190,6 @@ public class Geographie implements Serializable {
             questionEtReponse.add("Ukraine Kiev");
             questionEtReponse.add("Uruguay Montevideo");
             questionEtReponse.add("Vanuatu Port-Vila");
-            questionEtReponse.add("Vatican Vatican");
             questionEtReponse.add("Venezuela Caracas");
             questionEtReponse.add("Yémen Sanaa");
             questionEtReponse.add("Zambie Lusaka");
@@ -239,16 +239,6 @@ public class Geographie implements Serializable {
 
         reponsesVraiesFausses.add(currentReponse);
         return reponsesVraiesFausses;
-    }
-
-
-
-    public ArrayList<String> getQuestionEtReponse() {
-        return questionEtReponse;
-    }
-
-    public boolean reponseAnglais(String rep) {
-        return currentReponse.equals(rep.toLowerCase());
     }
 
     public String getCurrentQuestion() {

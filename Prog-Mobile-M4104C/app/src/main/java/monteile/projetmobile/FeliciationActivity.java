@@ -22,6 +22,7 @@ public class FeliciationActivity extends AppCompatActivity {
 
     private int diff = 0;
     private String matiere;
+    private TextView tvMeilleurScore ;
 
     private DatabaseClient mDb;
 
@@ -37,6 +38,9 @@ public class FeliciationActivity extends AppCompatActivity {
 
         mDb = DatabaseClient.getInstance(getApplicationContext());
         score = Integer.valueOf(getIntent().getStringExtra(SCORE_KEY));
+
+        tvMeilleurScore = (TextView) findViewById(R.id.tvMeilleurScore);
+        tvMeilleurScore.setVisibility(View.INVISIBLE);
 
 
         TextView score = (TextView) findViewById(R.id.scoreFinal);
@@ -59,37 +63,62 @@ public class FeliciationActivity extends AppCompatActivity {
     }
 
     public void sauverScore(Users user) {
+
+
         switch (diff) {
             case 1:
-                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition1())
+                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition1()){
                     user.setScoreAddition1(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration1())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration1()) {
                     user.setScoreSoustration1(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication1())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication1()) {
                     user.setScoreMutiplication1(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("capitales") && score > user.getScoreCapitale1())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("capitales") && score > user.getScoreCapitale1()) {
                     user.setScoreCapitale1(score);
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
                 break;
             case 2:
-                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition2())
+                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition2()) {
                     user.setScoreAddition2(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration2())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration2()) {
                     user.setScoreSoustration2(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("traduction") && score > user.getScoreTraduction1())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("traduction") && score > user.getScoreTraduction1()) {
                     user.setScoreTraduction1(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication2())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication2()) {
                     user.setScoreMutiplication2(score);
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
                 break;
             case 3:
-                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition3())
+                if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("addition") && score > user.getScoreAddition3()) {
                     user.setScoreAddition3(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration3())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("soustraction") && score > user.getScoreSoustration3()) {
                     user.setScoreSoustration3(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication3())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("multiplication") && score > user.getScoreMutiplication3()) {
                     user.setScoreMutiplication3(score);
-                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("capitales") && score > user.getScoreCapitale3())
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
+                else if (getIntent().getStringExtra(CHOIX_EXO_KEY).toLowerCase().equals("capitales") && score > user.getScoreCapitale3()){
                     user.setScoreCapitale3(score);
-
+                    tvMeilleurScore.setVisibility(View.VISIBLE);
+                }
                 break;
 
         }
@@ -141,9 +170,6 @@ public class FeliciationActivity extends AppCompatActivity {
                         break;
                     }
                 }
-
-
-
                 sauverScore(monUser);
 
             }

@@ -26,6 +26,8 @@ public class InscriptionActivity extends AppCompatActivity {
     private EditText editTextPrenom;
     private EditText editTextNom;
     private EditText editTextAge;
+    private Button btnInscription;
+    private Users userCourrant;
 
 
 
@@ -40,7 +42,7 @@ public class InscriptionActivity extends AppCompatActivity {
         editTextNom = findViewById(R.id.nomReponse);
         editTextPrenom = findViewById(R.id.prenomReponse);
 
-        Button btnInscription = (Button) findViewById(R.id.inscription);
+        btnInscription = (Button) findViewById(R.id.inscription);
         Button btnRetour = (Button) findViewById(R.id.retour);
         TextView title = (TextView) findViewById(R.id.tvTitleInsc);
 
@@ -48,13 +50,7 @@ public class InscriptionActivity extends AppCompatActivity {
         //si oui
         if (!getIntent().getStringExtra(ID_KEY).isEmpty()) {
             getUser();
-            btnInscription.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    updateUser();
-                }
 
-            });
             btnInscription.setText("Valider la mise à jour");
             btnRetour.setText("Annuler la mise à jour");
             title.setText("Mise à jour utilisateur");
@@ -64,9 +60,6 @@ public class InscriptionActivity extends AppCompatActivity {
             btnInscription.setText("Valider l'inscription");
             btnRetour.setText("Annuler l'inscription");
         }
-
-
-
     }
 
     public void getUser() {
@@ -87,7 +80,7 @@ public class InscriptionActivity extends AppCompatActivity {
                 super.onPostExecute(users);
                 int id = Integer.valueOf(getIntent().getStringExtra(ID_KEY));
 
-                Users userCourrant = users.get(0);
+                userCourrant = new Users();
                 for (int i=0; i<users.size();i++){
                     if (users.get(i).getId() == id) {
                         userCourrant = users.get(i);
@@ -98,6 +91,14 @@ public class InscriptionActivity extends AppCompatActivity {
                 editTextNom.setText(userCourrant.getNom());
                 editTextPrenom.setText(userCourrant.getPrenom());
                 editTextAge.setText(userCourrant.getAge());
+
+                btnInscription.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        updateUser(userCourrant);
+                    }
+
+                });
             }
 
         }
@@ -114,7 +115,7 @@ public class InscriptionActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void updateUser() {
+    public void updateUser(final Users monUser) {
         // Récupérer les informations contenues dans les vues
         final String sPrenom = editTextPrenom.getText().toString().trim();
         Log.d("bonjour", "Val prenom : " + sPrenom);
@@ -149,20 +150,17 @@ public class InscriptionActivity extends AppCompatActivity {
             protected Users doInBackground(Void... voids) {
 
                 // creating a task
-                Users users = new Users();
-                int id = Integer.valueOf(getIntent().getStringExtra(ID_KEY));
-                users.setId(id);
-                users.setPrenom(sPrenom);
-                users.setAge(sAge);
-                users.setNom(sNom);
+                monUser.setPrenom(sPrenom);
+                monUser.setAge(sAge);
+                monUser.setNom(sNom);
 
 
                 // adding to database
                 mDb.getAppDatabase()
                         .usersDAO()
-                        .update(users);
+                        .update(monUser);
 
-                return users;
+                return monUser;
             }
 
             @Override

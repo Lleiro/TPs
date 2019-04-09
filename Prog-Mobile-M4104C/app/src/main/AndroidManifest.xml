@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExerciceActivityQCM"></activity>
-        <activity android:name=".FeliciationActivity" />
-        <activity android:name=".ExerciceActivity" />
-        <activity android:name=".MenuExerciceActivity" />
-        <activity android:name=".MenuMatieresActivity" />
-        <activity android:name=".InscriptionActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ExerciceActivityQCM" android:screenOrientation="portrait"></activity>
+        <activity android:name=".FeliciationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ExerciceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MenuExerciceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MenuMatieresActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".InscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

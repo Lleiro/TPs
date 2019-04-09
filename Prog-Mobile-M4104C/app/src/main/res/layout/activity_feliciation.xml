@@ -26,7 +26,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="800px"
+            android:layout_height="600px"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -38,6 +38,15 @@
                 android:textSize="25sp"
                 android:gravity="center"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMeilleurScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nouveau Meilleur Score !!"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"/>
 
         <LinearLayout
             android:layout_width="match_parent"
