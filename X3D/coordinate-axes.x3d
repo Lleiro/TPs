@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <head>
+  </head>
+  <Scene>
+
+  <!-- coordinate axes -->
+  <Group DEF='arrow'>
+    <Transform  rotation='0 0 1 -1.57' >
+    <Transform  translation='0 5 0'>
+    <Shape>
+        <Cylinder height='10' radius='0.1'/>
+        <Appearance><Material/></Appearance>
+    </Shape>
+    </Transform>
+    <Transform translation='0 10 0'>
+    <Shape>
+        <Cone bottomRadius='0.2' height='1'/>
+        <Appearance><Material/></Appearance>
+    </Shape>
+    </Transform>
+    </Transform>
+  </Group>
+  <Transform rotation='0 0 1 1.57'>
+    <Group USE='arrow' />
+  </Transform>
+  <Transform rotation='0 1 0 -1.57'>
+    <Group USE='arrow' />
+  </Transform>
+
+  <Transform translation='12 0 0'>
+    <Shape>
+        <Text string='"X"' solid='false'>
+			<FontStyle DEF='FSLetter' justify='"MIDDLE" "MIDDLE"' style='BOLD' size='2' />
+        </Text>
+	<Appearance>
+		<Material DEF='MLetter' diffuseColor='1 0 0'/>
+	</Appearance>
+    </Shape>
+  </Transform>
+  <Transform translation='0 12 0'>
+    <Shape>
+        <Text string='"Y"' solid='false'>
+			<FontStyle USE='FSLetter'/>
+        </Text>
+        <Appearance><Material USE='MLetter'/></Appearance>
+    </Shape>
+  </Transform>
+  <Transform translation='0 0 12'>
+    <Shape>
+        <Text string='"Z"' solid='false'>
+			<FontStyle USE='FSLetter'/>
+        </Text>
+	<Appearance><Material USE='MLetter'/></Appearance>
+    </Shape>
+  </Transform>
+ 
+  </Scene>
+</X3D>

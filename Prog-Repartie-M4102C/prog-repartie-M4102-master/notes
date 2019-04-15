@@ -1,0 +1,17 @@
+A COMPLETER:
+
+tp01:
+
+    recherche_image
+
+    processus_ou_thread
+
+tp03:
+
+    lec-red Bonus 3-4
+
+NOTES :
+
+tp03:
+
+    Bonus 2 : Dernier notify_all() remplacable par notify_one() + rajouter notify_one() après test condition lecteur

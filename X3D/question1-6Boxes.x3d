@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <head>
+    <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+    <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+    <meta content='*enter name of original author here*' name='creator'/>
+    <meta content='*enter date of initial version here*' name='created'/>
+  </head>
+  <Scene>
+
+  <!-- background -->
+  <Background skyColor='0.2 0.2 0.5'/>
+
+  <!-- 1 view point -->
+  <Transform rotation='0 1 0 0.8'> <!-- yaw -->
+  <Transform rotation='0 0 1 0.0'> <!-- pitch -->
+  <Transform rotation='1 0 0 -0.5'> <!-- roll -->
+      <Viewpoint description='viewFromUpperFrontRight'
+                 position='0 0 45'/>
+  </Transform>
+  </Transform>
+  </Transform>
+
+  <!-- 6 boxes -->
+  <Transform rotation="0.0 1 0 1.5708" translation="4 -2 2">
+    <Group DEF="twoBranchGroup">
+      <Shape >
+        <Box DEF="branch" size='6 2 2' />
+        <Appearance>
+    	    <Material diffuseColor="1 0 0"/>
+        </Appearance>
+      </Shape>
+
+      <Transform rotation="0.0 0.0 1.0 1.5708" translation="4 2 0">
+        <Shape>
+          <Box USE="branch"/>
+          <Appearance>
+      	    <Material diffuseColor="0 1 0"/>
+          </Appearance>
+        </Shape>
+      </Transform>
+    </Group>
+  </Transform>
+
+  <Transform rotation="0 0 1 -1.5708" translation="-2 2 4">
+      <Group USE="twoBranchGroup"/>
+  </Transform>
+
+
+  <Transform rotation="0 1 0 3.14159" translation="2 4 -2">
+    <Transform rotation="1 0 0 -1.5708">
+      <Group USE="twoBranchGroup"/>
+    </Transform>
+  </Transform> 
+
+
+
+
+  <!-- coordinate axes -->
+  <Inline url='"coordinate-axes.x3d"'/>
+
+  </Scene>
+</X3D>

@@ -1,0 +1,6 @@
+Section critique à N places
+
+
+Q: À quoi sert le mutex dans la classe MonThread ?
+
+R: Le mutex permet de bloquer le cout pour éviter de mélanger les affichages entre les threads.

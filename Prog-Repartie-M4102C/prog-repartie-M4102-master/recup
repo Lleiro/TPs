@@ -1,0 +1,41 @@
+#!/bin/bash
+if [ $# != 1 ]
+then
+  # Nombre d'arguments incorrect, ARRET
+  echo "Erreur : Le script n'accepte qu'un seul argument, or $# arguments ont été trouvés."
+
+else
+  # Nombre d'arguments OK, CONTINUE
+
+  rep_source="/users/info/pub/s4/M4102C/$1"
+  rep_dest="$HOME/M4102C"
+
+  echo "Recherche du dossier \"$1\" dans les fichiers publics du module M4102C..."
+
+  if [ ! -d $rep_source ]
+  then
+    # Le fichier choisi n'est pas un dossier, ARRET
+    echo "Erreur : Le fichier \"$1\" n'est pas un dossier."
+
+  else
+    # Le fichier choisi est un dossier, CONTINUE
+    echo "Le dossier \"$1\" existe."
+    echo "Copie en cours dans le dossier ~/M4102C..."
+
+    if [ ! -d $rep_dest ]
+    then
+      #Si le dossier M4102C n'existe pas, on le crée
+      mkdir $rep_dest
+    fi
+
+    echo $rep_source $rep_dest
+
+    cp -ri $rep_source $rep_dest
+
+    echo "La copie du dossier \"$1\" a bien été effectuée dans le dossier ~/M4102C."
+
+    echo "Déplacement dans le dossier, exécution du script creer_contexte..."
+    cd $rep_dest/$1
+    ./creer_contexte
+  fi
+fi
